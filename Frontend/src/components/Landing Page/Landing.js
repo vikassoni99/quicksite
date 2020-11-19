@@ -50,7 +50,7 @@ export default function Landing(props) {
               <br />
               <Link to="/login">
                 <Button
-                  color="primary"
+                  color="danger"
                   size="lg"
                   rel="noopener noreferrer"
                 >

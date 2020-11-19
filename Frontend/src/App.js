@@ -4,21 +4,34 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Landing from './components/Landing Page/Landing'
 import Login from './components/Login'
 import Signup from './components/Signup'
+import FindWeb from './components/FindWeb'
+import Home from './components/Home';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path='/login'>
-            <Login />
+          <Route
+            exact
+            path='/login'
+            component={Login} />
+          <Route
+            exact
+            path='/signup'
+            component={Signup} />
+          <Route
+            path='/:username/home'>
+            <Home />
           </Route>
-          <Route exact path='/signup'>
-            <Signup />
-          </Route>
-          <Route path='/'>
-            <Landing />
-          </Route>
+          <Route
+            exact
+            path='/:username'
+            component={FindWeb} />
+          <Route
+            exact
+            path='/'
+            component={Landing} />
         </Switch>
       </div>
     </Router>
