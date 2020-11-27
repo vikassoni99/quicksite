@@ -16,7 +16,7 @@ const Navbar = () => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo>
-                        La Net
+                        Quicksite
                     </NavLogo>
                     <MobileIcon>
                         <FaBars />

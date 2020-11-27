@@ -6,12 +6,17 @@ import Login from './components/Login'
 import Signup from './components/Signup'
 import FindWeb from './components/FindWeb'
 import Home from './components/Home';
+import Product from './components/Product'
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
+        <Route
+            exact
+            path='/product'
+            component={Product} />
           <Route
             exact
             path='/login'

@@ -31,7 +31,7 @@ class FindWeb extends Component {
 
     render() {
         let website = <h1>Loading...</h1>
-        if (this.state.data != null && this.state.data != "WNF") {
+        if (this.state.data !== null && this.state.data !== "WNF") {
             website = <div>
                 {this.props.history.replace("/"+this.state.username+"/home")}
             </div>
